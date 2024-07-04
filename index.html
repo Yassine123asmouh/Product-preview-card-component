@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: #f3eae3;
+      display: flex;
+      justify-content: center;
+     
+    }
+  .body{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    transform: translate(0 , 28% );   
+  }
+  .left{
+    width: auto;
+  }
+  img{
+    width: 372px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+.right{
+  width: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffffff;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+p , a, h1{
+  margin-left: 35px;
+}
+.titre{
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+}
+h1{
+  line-height: 1;
+}
+.inside{
+  line-height: 1.8;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  position: relative;
+  bottom: 30px;
+  left: -35px;
+}
+.price .pri1{
+  font-size: 35px;
+  color: #3d8168;
+  font-weight: 700;
+}
+.pri2{
+   text-decoration: line-through;
+   opacity: 0.6;
+   font-size: 15px;
+}
+a{
+  background-color: #3d8168;
+  text-decoration: none;
+  color: #ffffff;
+  width: 90%;
+  align-self: center;
+  text-align: center;
+  height: 70px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  background-image: url(icon-cart.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  align-content: center;
+  background-position: 60px;
+  font-family: "Montserrat", sans-serif;
+}
+a:hover{
+  background-color: #1a4031;
+}
+  </style>
+</head>
+<body>
+<div class="body">
+  <div class="left">
+<img src="image-product-desktop.jpg" alt="">
+  </div>
+  <div class="right">
+ <p class="titre"> Perfume</p>
+
+ <h1>Gabrielle <br>Essence Eau <br>De Parfum</h1> 
+
+ <p class="inside"> A floral, solar and voluptuous <br> interpretation composed by <br> Olivier Polge, 
+  Perfumer-Creator<br> for the House of CHANEL.</p> 
+<div class="price">
+<p class="pri1">  $149.99</p>
+<p class="pri2">  $169.99</p>
+</div>
+<a href="">Add to Cart</a>
+
+</div>
+  </div>
+</body>
+</html>                                                                                                                                                                                                                                                   
